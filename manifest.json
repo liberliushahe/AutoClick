@@ -1,0 +1,22 @@
+﻿{     
+ "name": "定时刷新",   
+ "version": "0.5",  
+   "manifest_version": 2,    
+ "description": "定时诊断",  
+      
+  "icons": {  
+                      
+         "16": "images/32.png",
+        "128": "images/128.png"	 
+           },     
+ "permissions": [  
+          "tabs", "http://*/*","https://*/*" 
+  
+     ],  
+  "content_scripts":[
+  {
+      "matches":["http://XXXXXXX:8888/XXXXX/XXXXXXX/*"],
+      "js":["jquery-1.7.2.min.js","autoclickflush.js"]
+  }
+  ]   
+}  
